@@ -510,6 +510,72 @@ a:hover {
     font-size: 0.85rem;
 }
 
+/* --- Reviews CTA (new business) --- */
+.reviews-cta {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reviews-cta-text h3 {
+    font-size: 1.6rem;
+    color: var(--secondary);
+    margin-bottom: 12px;
+}
+
+.reviews-cta-text p {
+    color: var(--grey);
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+}
+
+.reviews-cta-box {
+    background: var(--white);
+    padding: 32px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary);
+}
+
+.reviews-cta-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.reviews-cta-box h4 {
+    font-size: 1.15rem;
+    color: var(--secondary);
+    margin-bottom: 16px;
+}
+
+.reviews-cta-box ul {
+    list-style: none;
+}
+
+.reviews-cta-box ul li {
+    padding: 6px 0;
+    padding-left: 24px;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.reviews-cta-box ul li::before {
+    content: "\2713";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .reviews-cta {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* --- Contact --- */
 .contact-grid {
     display: grid;
