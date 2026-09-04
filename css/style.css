@@ -75,7 +75,8 @@ a:hover {
 
 .logo-icon {
     color: var(--primary);
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .nav {
@@ -176,7 +177,18 @@ a:hover {
     gap: 24px;
     flex-wrap: wrap;
     font-size: 0.9rem;
-    opacity: 0.85;
+    opacity: 0.9;
+}
+
+.hero-trust span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.trust-icon {
+    color: var(--accent);
+    flex-shrink: 0;
 }
 
 .hero-trust span::before {
@@ -302,8 +314,20 @@ a:hover {
 }
 
 .service-icon {
-    font-size: 3rem;
-    margin-bottom: 16px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(0, 168, 232, 0.1);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-card-featured .service-icon {
+    background: rgba(255, 183, 3, 0.15);
+    color: #e89a00;
 }
 
 .service-card h3 {
@@ -352,8 +376,15 @@ a:hover {
 }
 
 .feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(0, 168, 232, 0.1);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
 }
 
 .feature h4 {
@@ -541,8 +572,15 @@ a:hover {
 }
 
 .reviews-cta-icon {
-    font-size: 2rem;
-    margin-bottom: 12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255, 183, 3, 0.15);
+    color: #e89a00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 .reviews-cta-box h4 {
@@ -591,19 +629,34 @@ a:hover {
 }
 
 .contact-item {
-    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(0, 168, 232, 0.1);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .contact-label {
     display: block;
     font-weight: 600;
     color: var(--grey);
-    font-size: 0.85rem;
-    margin-bottom: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
 }
 
 .contact-item a {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--secondary);
     font-weight: 500;
 }
